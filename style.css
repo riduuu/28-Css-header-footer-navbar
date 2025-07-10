@@ -7,9 +7,11 @@ body{
 /* Header start */
 header{
     width: 100%;
-    background-color:rgb(15, 15, 15);
+    background-color:rgb(48, 48, 48);
     color: white;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 div.logo{
@@ -17,32 +19,26 @@ div.logo{
     font-size: 30px;
     font-weight: bold;
     margin: 10px 0px 0px 10px;
-    padding: 20px;
     text-shadow: 5px 2px 4px rgb(2, 228, 232);
+    margin: 0 0 0 20px;
 }
 .nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
     
 }
 .nav ul{
     list-style: none;
-    padding-left: 00px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .nav ul li{
-    background-color:#262626 ;
-    width: 160px;
-    height: 40px;
-    line-height: 40px;
-    border: 1px solid whitesmoke;
-    border-radius: 30px;
-    margin: 20px;
-    float: left;
-    color: rgb(254, 252, 252);
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
     
 }
 .nav ul li a{
@@ -52,8 +48,8 @@ div.logo{
     justify-content: center;
 }
 .nav ul li:hover{
-    background-color: rgb(2, 210, 222);
-    transition: all ease-in-out 0.5s;
+    background-color: rgba(114, 253, 255, 0.677);
+    transition: all ease-in-out 0.2s;
 
 }
 .nav ul ul{
@@ -83,21 +79,26 @@ div.logo{
 
 
 /* form start */
+.formSection{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .form1{
-    width: fit-content;
-    height: fit-content;
-    background-color: rgb(255, 65, 65);
-    color: white;
+    background-color: rgb(65, 255, 255);
+    color: rgb(59, 59, 59);
     text-align: center;
     margin: 0% auto;
     margin-top: 20px;
     border-radius: 5%;
     padding: 20px 60px 30px 60px;
-    box-shadow: 0px 0px 20px 5px rgb(85, 85, 85)
+    box-shadow: 0px 0px 20px 5px rgb(136, 136, 136)
 }
 .form1 input{
-    padding: 5px 50px;
-    border-color: rgb(71, 69, 69);
+    padding: 10px 50px;
+    border: 1px solid rgb(180, 180, 180);
+    outline: none;
     border-radius: 5px;
     
 }
@@ -122,7 +123,6 @@ div.logo{
 footer{
     width: 100%;
     bottom: 0px;
-    position: absolute;
     text-align: center;
     background-color: rgb(48, 47, 47);
     color: white;
